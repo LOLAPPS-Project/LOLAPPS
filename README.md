@@ -10,8 +10,7 @@ that can be use to the hacker's advantage.
 we will start looking into our options for making it easy to search, and prettier on the eyes. 
 
 # Contribution
-Please see:
-
+Please see:\
 https://github.com/johnjhacking/LOLAPPS/blob/main/Contributing.md
 # Maintainers
 * John Jackson ([@johnjhacking](https://twitter.com/johnjhacking))
