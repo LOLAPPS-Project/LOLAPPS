@@ -1,7 +1,7 @@
 
 Anyone can contribute to the project, just be sure to use this template and open up a PR in the corresponding section. 
 
-All template submissions should have at least one reference link if the exploitation methodology isn't obvious. If the application is offered on multiple platforms, choose the platform closest to the provided reference. 
+All template submissions should have at least one reference link if the exploitation methodology isn't obvious. If the application is offered on multiple platforms, choose the platform that's most logical/has the most references that you can find. For example, while Discord exists as a Desktop application - in enterprise exploitation you're more likely to see threat actors communicate via the web application, since downloading Discord looks suspicious. 
 
 ```
 Name: Zix Secure Messaging
