@@ -12,8 +12,8 @@ Usage:
     MitreID: T1567
   - Category: Download
     Steps to replicate: Register a zix secure messaging account for the company. Upload a zip-encrypted archive with your payload in it. Compose a new message and send it to an employee that doesnt exist. Login from the victim host machine, download, unzip, and execute the payload. 
-    Category: Credentials
     Privileges: User
+    Limitations: Need to be able to register an account or gain access to one. Can only upload a specified archive size per message.
     MitreID: T1105
 Resources:
   - Link: https://johnjhacking.com/blog/zix-exfiltration/
