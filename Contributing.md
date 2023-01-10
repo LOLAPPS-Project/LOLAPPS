@@ -1,7 +1,7 @@
 
 Anyone can contribute to the project, just be sure to use this template and open up a PR in the corresponding section. 
 
-All template submissions should have at least one reference link if the exploitation methodology isn't obvious. 
+All template submissions should have at least one reference link if the exploitation methodology isn't obvious. If the application is offered on multiple platforms, choose the platform closest to the provided reference. 
 
 ```
 Name: Zix Secure Messaging
