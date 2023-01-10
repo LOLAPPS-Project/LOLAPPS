@@ -18,7 +18,7 @@ Usage:
   - Category: Phishing
     Steps to replicate: Register a zix secure messaging account using multiple employee email addresses. Save all of the emails and passwords registered. If an employee clicks the approve button, youll now have their newly registered account to use for whitelisted phishing. 
     Usecase: Whitelisted phishing
-    Privileges: User
+    Privileges: User interaction
     Limitations: An employee must click the account approval button. In addition, organizations can require an account creation code instead of an approval button.
     MitreID: T1566.003
 Resources:
