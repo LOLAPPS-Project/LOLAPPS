@@ -1,0 +1,21 @@
+---
+Name: Zix Secure Messaging
+Description: Enterprise tool to compose, receive, view, reply to, and forward encrypted messages over the internet. 
+Author: 'John Jackson'
+Created: 2023-01-09
+Usage:
+  - Category: Data Exfiltration
+    Steps to replicate: Attempt to locate the zix secure messaging portal for the organization and check to see if you have the ability to register an account. Attempt to register an account with a custom email that looks like it could actually belong to an employee. Zip any files you want to exfiltrate from the workstation. Compose a new message, and address it to an employee that doesnt actually exist in the system. You can now retrieve the files on a different device by logging in and viewing the sent mail tab.
+    Usecase: Exfiltrating data in heavily monitored environments
+    Privileges: User
+    MitreID: T1567
+  - Command: reg save HKLM\SECURITY c:\test\security.bak && reg save HKLM\SYSTEM c:\test\system.bak && reg save HKLM\SAM c:\test\sam.bak
+    Description: Dump registry hives (SAM, SYSTEM, SECURITY) to retrieve password hashes and key material
+    Usecase: Dump credentials from the Security Account Manager (SAM)
+    Category: Credentials
+    Privileges: Administrator
+Resources:
+  - Link: https://johnjhacking.com/blog/zix-exfiltration/
+Acknowledgement:
+  - Person: John Jackson
+    Handle: '@johnjhacking'
