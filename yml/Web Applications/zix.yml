@@ -23,6 +23,7 @@ Usage:
     MitreID: T1566.003
 Resources:
   - Link: https://johnjhacking.com/blog/zix-exfiltration/
+  - Link: https://johnjhacking.com/blog/zix-spearphishing/
 Acknowledgement:
   - Person: John Jackson
     Handle: '@johnjhacking'
