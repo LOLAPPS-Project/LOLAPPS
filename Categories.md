@@ -2,4 +2,4 @@ CATAGORIES
 
 Data Exfiltration\
 Download\
-Phishing\
+Phishing
