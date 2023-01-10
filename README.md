@@ -14,6 +14,7 @@ Please see:\
 https://github.com/johnjhacking/LOLAPPS/blob/main/Contributing.md
 # Maintainers
 * John Jackson ([@johnjhacking](https://twitter.com/johnjhacking))
+* Therese ([@theresem90](https://github.com/theresem90))
 
 # Credits
 The LOLBAS Project and GTFObins for borrowed code and ideas.
