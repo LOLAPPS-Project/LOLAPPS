@@ -20,4 +20,5 @@ https://github.com/johnjhacking/LOLAPPS/blob/main/Contributing.md
 
 
 # Credits
-The LOLBAS Project and GTFObins for borrowed code and ideas.
+The LOLBAS Project and GTFObins for borrowed code and ideas.\
+Special thanks to [Cherry Fairy Art](https://www.cherryfairy.art/) for the logo.
