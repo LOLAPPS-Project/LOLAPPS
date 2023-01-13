@@ -6,8 +6,10 @@ and LOLAPPS is meant to be a supplementary resource for identifying native funct
 that can be used to the hacker's advantage, both third-party and from within.
 
 # Mission
-*Eventually* the repository will get reworked into a frontend. Once the repository gets ~15-20 techniques,
-we will start looking into our options for making it easy to search, and prettier on the eyes. 
+To dominate the blue team.\
+Joking. 
+
+To document the techniques being used in the wild, and give both blue and red teamers the tools they need.  
 
 # Contribution
 Please see:\
