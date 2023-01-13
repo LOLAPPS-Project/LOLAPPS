@@ -21,7 +21,8 @@ MitreID: The official Mitre technique identifier
 None: Use this for apps you can self-register to WITHOUT user interaction. Use this even if you need special access to view the application.\
 User: Needs a user account that wasn't made by you\
 User interaction: An employee or user needs to click something to finish the exploitation process\
-Administrator: Special access rights within an application
+Administrator: Special access rights within an application\
+Installation: The application might need to be installed
 
 Note: Be concise if multiple privilege sets can accomplish a technique. For instance, in the Zix template, I wrote User interaction/User since
 an attacker can carry out Phishing if they aquire a User account in a different way.
