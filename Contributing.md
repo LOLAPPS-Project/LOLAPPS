@@ -13,7 +13,7 @@ You'll have a better chance of standing out if you are thorough in your thought 
 Steps: How to carry out the technique\
 Description: What you're doing (quick summary of the steps)\
 Category: Submit a category from our list. If it doesn't exist, we will make the category if it's a common category.\
-Privileges: None, User, User interaction, Administrator\
+Privileges: None, User, User interaction, Administrator, Installation\
 Limitations: Caveats to using this method\
 MitreID: The official Mitre technique identifier
 
