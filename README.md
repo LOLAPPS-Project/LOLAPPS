@@ -5,6 +5,8 @@ Kind of like the cousin of LOLBAS and GTFObins. Sometimes you might struggle to 
 and LOLAPPS is meant to be a supplementary resource for identifying native functionality in applications
 that can be used to the hacker's advantage, both third-party and from within.
 
+Applications that you have to install can be included too, but must be indicated within the "Permissions" field for templating purposes. 
+
 # Mission
 To dominate the blue team.\
 Joking. 
