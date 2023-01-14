@@ -1,7 +1,7 @@
 # Living off the Land Applications
 LOLAPPS is a compendium of applications that can be used to carry out day-to-day exploitation. 
 
-Kind of like the cousin of LOLBAS and GTFObins. Sometimes you might struggle to find built-in binaries to exploit
+Kind of like the cousin of LOLBAS and GTFObins. Sometimes you might struggle to common binaries to exploit
 and LOLAPPS is meant to be a supplementary resource for identifying native functionality in applications
 that can be used to the hacker's advantage, both third-party and from within.
 
