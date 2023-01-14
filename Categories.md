@@ -3,4 +3,5 @@ CATAGORIES
 Data Exfiltration\
 Download\
 Phishing\
-Malware Hosting
+Malware Hosting\
+Lateral Movement
