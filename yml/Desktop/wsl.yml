@@ -6,7 +6,7 @@ Usage:
   - Steps: Identify WSL or WSL2 functionality on a Windows 10 or 11 endpoint. This can be achieved by running 'where wsl' in a Command Prompt.
     Once identified, the command 'wsl' can be ran in either a Command Prompt or PowerShell terminal to load into the default Linux environment.
 	Locate a suitable directory and generate a reverse shell that points to a listener or other C2 server. Backing out to the regular Command 
-	Prompt/PowerShell terminal, generate an Autorun registry edit. Example - reg add “HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run” -v screendoor /t REG_SZ /d '"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -c wsl —exec bash /home/themayor/temp.sh"'. Start the reverse shell
+	Prompt/PowerShell terminal, generate an Autorun registry edit. Example - reg add “HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run” -v screendoor /t REG_SZ /d '"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -c wsl --exec bash /home/themayor/temp.sh"'. Start the reverse shell
 	or C2 server listener and wait for the system to reboot.
   - Description: Steps to enable persistence via Windows Subsystem for Linux.
   - Category: Persistence
