@@ -5,4 +5,5 @@ Download\
 Phishing\
 Malware Hosting\
 C2 Channel\
-Lateral Movement
+Lateral Movement\
+Persistence
