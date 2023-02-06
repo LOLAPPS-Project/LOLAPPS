@@ -28,8 +28,9 @@ jobs:
         with:
           files: yml/Web/*.yml
           schema: YML-Schema.yml
-      - name: Validate Mobile YAML Schema
-        uses: cketti/action-pykwalify@v0.3-temp-fix
-        with:
-          files: yml/Mobile/*.yml
-          schema: YML-Schema.yml
+# Commenting out until mobile becomes a thing.
+#      - name: Validate Mobile YAML Schema
+#        uses: cketti/action-pykwalify@v0.3-temp-fix
+#        with:
+#          files: yml/Mobile/*.yml
+#          schema: YML-Schema.yml
