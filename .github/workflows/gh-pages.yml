@@ -12,8 +12,8 @@ jobs:
       - name: Change .yml to .md
         run: |
           for x in $(find yml/ -name '*.yml'); do echo "---" >> "$x"; mv "$x" "${x/%\.yml/.md}"; done
-          mv yml/Desktop yml/Desktop_New
-          mv yml/Web yml/Web_New
+          mv yml/Desktop_App yml/Desktop
+          mv yml/Web_App yml/Web
         # mv yml/Mobile yml/Mobile / Commenting out for the time being
       - name: Deploy to LOLAPPS-Project.github.io repo
         uses: peaceiris/actions-gh-pages@v3
