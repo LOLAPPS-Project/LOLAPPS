@@ -1,7 +1,7 @@
 ---
 name: Update LOLAPPS-Project.github.io
 on:
-  workflow_run:
+  push:
     branches:
       - master
     paths:
