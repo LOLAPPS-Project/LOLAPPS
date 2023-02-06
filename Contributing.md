@@ -28,6 +28,7 @@ Note: Be concise if multiple privilege sets can accomplish a technique. For inst
 an attacker can carry out Phishing if they aquire a User account in a different way.
 
 ```
+---
 Name: Zix Secure Messaging
 Description: Enterprise tool to compose, receive, view, reply to, and forward encrypted messages over the internet. 
 Author: 'John Jackson'
