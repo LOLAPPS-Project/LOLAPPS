@@ -18,6 +18,7 @@ jobs:
       - name: Deploy to LOLAPPS-Project.github.io repo
         uses: peaceiris/actions-gh-pages@v3
         with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: LOLAPPS-Project/lolapps-project.github.io
           publish_branch: master
           publish_dir: yml
