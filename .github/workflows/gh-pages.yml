@@ -1,5 +1,5 @@
 ---
-name: Update LOLBAS-Project.github.io
+name: Update LOLAPPS-Project.github.io
 on:
   push:
     branches:
@@ -17,17 +17,17 @@ jobs:
       - name: Change .yml to .md
         run: |
           for x in $(find yml/ -name '*.yml'); do echo "---" >> "$x"; mv "$x" "${x/%\.yml/.md}"; done
-          mv yml/OSBinaries yml/Binaries
-          mv yml/OSLibraries yml/Libraries
-          mv yml/OSScripts yml/Scripts
-      - name: Deploy to LOLBAS-Project.github.io repo
+          mv yml/Desktop yml/Desktop
+          mv yml/Web yml/Web
+          mv yml/Mobile yml/Mobile
+      - name: Deploy to LOLAPPS-Project.github.io repo
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: LOLBAS-Project/LOLBAS-Project.github.io
+          external_repository: LOLAPPS-Project/LOLAPPS-Project.github.io
           publish_branch: master
           publish_dir: yml
-          destination_dir: _lolbas
+          destination_dir: _lolapps
           enable_jekyll: true
           keep_files: false
           commit_message: "Applying update "
