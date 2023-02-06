@@ -12,7 +12,7 @@ Usage:
     Limitations: Its not uncommon to see organizations block file sharing services by using traffic inspection through tools like Symantec Blue Coat.
     MitreID: T1567.002
   - Steps: Create a free dropbox account. Upload a password protected archive. Access Dropbox from the victim host and download/extract the archive.
-    Description: Steps to download malware to the victim's host     
+    Description: Steps to download malware to the victim's host
     Usecase: Possibly whitelisted file downloading, depending on the organization.
     Category: Download
     Privileges: None
@@ -24,4 +24,4 @@ Resources:
 Acknowledgement:
   - Person: John Jackson
     Handle: '@johnjhacking'
----    
+---
