@@ -18,23 +18,18 @@ jobs:
         with:
           files: YML-Template.yml
           schema: YML-Schema.yml
-      - name: Validate OSBinaries YAML Schema
+      - name: Validate Desktop YAML Schema
         uses: cketti/action-pykwalify@v0.3-temp-fix
         with:
-          files: yml/OSBinaries/*.yml
+          files: yml/Desktop/*.yml
           schema: YML-Schema.yml
-      - name: Validate OSLibraries YAML Schema
+      - name: Validate Web YAML Schema
         uses: cketti/action-pykwalify@v0.3-temp-fix
         with:
-          files: yml/OSLibraries/*.yml
+          files: yml/Web/*.yml
           schema: YML-Schema.yml
-      - name: Validate OSScripts YAML Schema
+      - name: Validate Mobile YAML Schema
         uses: cketti/action-pykwalify@v0.3-temp-fix
         with:
-          files: yml/OSScripts/*.yml
-          schema: YML-Schema.yml
-      - name: Validate OtherMSBinaries YAML Schema
-        uses: cketti/action-pykwalify@v0.3-temp-fix
-        with:
-          files: yml/OtherMSBinaries/*.yml
+          files: yml/Mobile/*.yml
           schema: YML-Schema.yml
