@@ -9,6 +9,7 @@ Usage:
     Usecase: A description of the usecase
     Category: Download
     Privileges: User
+    Limitations: Example of what affects your ability to perform the activity
     MitreID: T1307
 Resources:
   - Link: http://blogpost.com
