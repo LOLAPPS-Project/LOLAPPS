@@ -27,13 +27,13 @@ mapping:
   "Created":
     type: date
     required: true
-  "Commands":
+  "Usage":
     type: seq
     required: true
     sequence:
       - type: map
         mapping:
-          "Command":
+          "Steps":
             type: str
             required: true
           "Description":
@@ -45,8 +45,11 @@ mapping:
           "Category":
             type: str
             required: true
-            enum: [ADS, AWL Bypass, Compile, Conceal, Copy, Credentials, Decode, Download, Dump, Encode, Execute, Reconnaissance, Tamper, UAC Bypass, Upload]
+            enum: [Data Exfiltration, Download, Phishing, Malware Hosting, C2 Channel, Lateral Movement, Persistence]
           "Privileges":
+            type: str
+            required: true
+          "Limitations":
             type: str
             required: true
           "MitreID":
@@ -56,46 +59,6 @@ mapping:
           "OperatingSystem":
             type: str
             required: true
-  "Full_Path":
-    type: seq
-    required: true
-    sequence:
-      - type: map
-        mapping:
-          "Path":
-            type: str
-            required: true
-  "Code_Sample":
-    type: seq
-    required: false
-    sequence:
-      - type: map
-        mapping:
-          "Code":
-            type: str
-  "Detection":
-    type: seq
-    required: false
-    sequence:
-      - type: map
-        mapping:
-          "IOC":
-            type: str
-          "Sigma":
-            type: str
-            pattern: '^http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+#]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+$'
-          "Analysis":
-            type: str
-            pattern: '^http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+#]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+$'
-          "Elastic":
-            type: str
-            pattern: '^http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+#]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+$'
-          "Splunk":
-            type: str
-            pattern: '^http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+#]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+$'
-          "BlockRule":
-            type: str
-            pattern: '^http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+#]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+$'
   "Resources":
     type: seq
     required: false
