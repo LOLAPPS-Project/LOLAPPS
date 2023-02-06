@@ -1,5 +1,7 @@
 # Living off the Land Applications
-LOLAPPS is a compendium of applications that can be used to carry out day-to-day exploitation. 
+LOLAPPS is a compendium of applications that can be used to carry out day-to-day exploitation.
+
+<img src="https://github.com/LOLAPPS-Project/lolapps-project.github.io/blob/master/assets/logo.png" height="250">
 
 Kind of like the cousin of LOLBAS and GTFObins. Sometimes you might struggle to common binaries to exploit
 and LOLAPPS is meant to be a supplementary resource for identifying native functionality in applications
