@@ -7,9 +7,9 @@ Usage:
   - Steps: The steps to abuse the application functionality
     Description: Quick synopsis of the given steps, or use this field for the steps if you would prefer to have the command in the code block
     Usecase: A description of the usecase
-    Category: The category of the abuse, i.e. Download or Exfiltration
-    Privileges: Required privs
-    MitreID: The MITRE identifier
+    Category: Download
+    Privileges: User
+    MitreID: T1307
 Resources:
   - Link: http://blogpost.com
   - Link: http://twitter.com/something
