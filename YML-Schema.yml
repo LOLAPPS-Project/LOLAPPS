@@ -56,9 +56,6 @@ mapping:
             type: str
             required: true
             pattern: '^T[0-9]{4}(\.[0-9]{3})?$'
-          "OperatingSystem":
-            type: str
-            required: true
   "Resources":
     type: seq
     required: false
