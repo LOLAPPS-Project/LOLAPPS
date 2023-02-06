@@ -21,12 +21,12 @@ jobs:
       - name: Validate Desktop YAML Schema
         uses: cketti/action-pykwalify@v0.3-temp-fix
         with:
-          files: yml/Desktop/*.yml
+          files: yml/Desktop_App/*.yml
           schema: YML-Schema.yml
       - name: Validate Web YAML Schema
         uses: cketti/action-pykwalify@v0.3-temp-fix
         with:
-          files: yml/Web/*.yml
+          files: yml/Web_App/*.yml
           schema: YML-Schema.yml
 # Commenting out until mobile becomes a thing.
 #      - name: Validate Mobile YAML Schema
