@@ -1,6 +1,6 @@
 ---
 Name: Zix Secure Messaging
-Description: Enterprise tool to compose, receive, view, reply to, and forward encrypted messages over the internet. 
+Description: Enterprise tool to compose, receive, view, reply to, and forward encrypted messages over the internet.
 Author: 'John Jackson'
 Created: 2023-01-09
 Usage:
@@ -11,14 +11,14 @@ Usage:
     Privileges: None
     Limitations: Need to be able to register an account or gain access to one. Can only exfiltrate a specified amount of data per message.
     MitreID: T1567
-  - Steps: Register a zix secure messaging account for the company. Upload a zip-encrypted archive with your payload in it. Compose a new message and send it to an employee that doesnt exist. Login from the victim host machine, download, unzip, and execute the payload. 
+  - Steps: Register a zix secure messaging account for the company. Upload a zip-encrypted archive with your payload in it. Compose a new message and send it to an employee that doesnt exist. Login from the victim host machine, download, unzip, and execute the payload.
     Description: Steps to setup an account and download your malware by a whitelisted solution.
     Usecase: Leveraging external tooling for proxy inspection bypass
     Category: Download
     Privileges: None
     Limitations: Need to be able to register an account or gain access to one. Can only upload a specified archive size per message.
     MitreID: T1105
-  - Steps: Register a zix secure messaging account using multiple employee email addresses. Save all of the emails and passwords registered. If an employee clicks the approve button, youll now have their newly registered account to use for whitelisted phishing. 
+  - Steps: Register a zix secure messaging account using multiple employee email addresses. Save all of the emails and passwords registered. If an employee clicks the approve button, youll now have their newly registered account to use for whitelisted phishing.
     Description: Steps to attempt phishing with tools recognized/allowed by the company
     Usecase: Whitelisted phishing since Zix will probably be allowed if the company uses it
     Category: Phishing
@@ -31,4 +31,4 @@ Resources:
 Acknowledgement:
   - Person: John Jackson
     Handle: '@johnjhacking'
---- 
+---
