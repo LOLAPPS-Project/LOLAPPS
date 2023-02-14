@@ -6,4 +6,5 @@ Phishing\
 Malware Hosting\
 C2 Channel\
 Lateral Movement\
-Persistence
+Persistence\
+DLL Hijacking
