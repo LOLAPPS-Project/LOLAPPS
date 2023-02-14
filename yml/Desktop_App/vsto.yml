@@ -16,7 +16,7 @@ Usage:
     Usecase: Persistence
     Category: Persistence
     Privileges: User interaction/User
-    Limitations: A user with valid privileges to approve Add-In installation and persistence mechanisms. Additional security software installed on system can also detect and block the persistence mechanism.    
+    Limitations: A user with valid privileges to approve Add-In installation and persistence mechanisms. Additional security software installed on system can also detect and block the persistence mechanism.
     MitreID: T1137.006
 Resources:
   - Link: https://www.deepinstinct.com/blog/no-macro-no-worries-vsto-being-weaponized-by-threat-actors
