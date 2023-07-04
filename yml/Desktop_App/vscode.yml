@@ -13,7 +13,7 @@ Usage:
     Privileges: User
     Limitations: None
     MitreID: T1546
-  - Steps: Create/Modify a task in a .code-workspace file, or a tasks.json file inside a .vscode folder. Add a new task with the payload in the "command" or "args" parameters. Add one of the possible triggers: "runOption" parameter with value of "folderOpen"; or shortcut keys in the keybindings.json file.
+  - Steps: 'Create/Modify a task in a .code-workspace file, or a tasks.json file inside a .vscode folder. Add a new task with the payload in the "command" or "args" parameters. Add one of the possible triggers: "runOption" parameter with value of "folderOpen"; or shortcut keys in the keybindings.json file.'
     Description: Steps to create and enable a VS Code task for persitence
     Usecase: Establishing persistence on a Windows host
     Category: Persistence
