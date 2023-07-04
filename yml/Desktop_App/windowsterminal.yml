@@ -4,7 +4,7 @@ Author: 'Adam Brass', 'Martin Sohn Christensen'
 Created: 2023-01-29
 Usage:
   - Steps: Locate the settings.json in "%LocalAppData%\Packages\Microsoft.WindowsTerminal_*\LocalState\". Add a custom profile with the payload in the "commandLine" parameter. Add the custom profile GUID to the "defaultProfile" value. Add the value "startOnUserLogin": true
-    Description: Steps to create a Terminal profile for persitence
+    Description: Steps to create a Terminal profile for persistence
     Usecase: Establishing persistence on a Windows host
     Category: Persistence
     Privileges: User
