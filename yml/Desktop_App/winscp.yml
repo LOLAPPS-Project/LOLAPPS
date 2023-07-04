@@ -1,9 +1,7 @@
 ---
 Name: WinSCP
 Description: WinSCP is a free and open-source SSH File Transfer Protocol, File Transfer Protocol, WebDAV, Amazon S3, and secure copy protocol (SCP) client for Microsoft Windows.
-Author:
-  - 'Adam Brass'
-  - 'Martin Sohn Christensen'
+Author: 'Adam Brass and Martin Sohn Christensen'
 Created: 2023-01-29
 Usage:
   - Steps: WinSCP "Commands" can contain persistence and are run upon hotkeys or interaction with the WinSCP interface. The type "CustomCommands" which are command line commands, multiple CustomCommands exists by default and are stored in "HKCU:\SOFTWARE\Martin Prikryl\WinSCP 2\Configuration\CustomCommands"
