@@ -1,7 +1,9 @@
 ---
 Name: Notepad++
 Description: Notepad++ is a free source code editor and Notepad replacement that supports several languages.
-Author: 'Adam Brass', 'Martin Sohn Christensen'
+Author:
+  - 'Adam Brass'
+  - 'Martin Sohn Christensen'
 Created: 2023-01-29
 Usage:
   - Steps: Compile code and generate a DLL plugin file. Create a custom plugin folder in the plugins directory, for example "C:\Program Files\Notepad++\plugins\" and place the DLL plugin file in the directory. The directory and DLL must have the same name.
