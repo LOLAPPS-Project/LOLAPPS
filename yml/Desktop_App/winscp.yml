@@ -1,7 +1,7 @@
 ---
 Name: WinSCP
 Description: WinSCP is a free and open-source SSH File Transfer Protocol, File Transfer Protocol, WebDAV, Amazon S3, and secure copy protocol (SCP) client for Microsoft Windows.
-Author: 
+Author:
   - 'Adam Brass'
   - 'Martin Sohn Christensen'
 Created: 2023-01-29
@@ -25,7 +25,7 @@ Usage:
     Usecase: Establishing persistence on a Windows host
     Category: Persistence
     Privileges: User
-    Limitations: 
+    Limitations:
     MitreID: T1546
 Resources:
   - Link: https://twitter.com/martinsohndk/status/1649678130859130882
