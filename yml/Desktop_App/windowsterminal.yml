@@ -18,5 +18,3 @@ Acknowledgement:
     Handle: '@nas_bench'
   - Person: 'bob van der staak'
     Handle: '@securityBeserk'
-    
-    Locate the settings.json in "%LocalAppData%\Packages\Microsoft.WindowsTerminal_*\LocalState\". Add a custom profile with the payload in the commandLine parameter. Add the custom profile GUID to the "defaultProfile" value. Add the value "startOnUserLogin": true
