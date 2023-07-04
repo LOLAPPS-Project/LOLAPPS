@@ -4,7 +4,7 @@ Author: 'Adam Brass', 'Martin Sohn Christensen'
 Created: 2023-01-29
 Usage:
   - Steps: WinSCP "Commands" can contain persistence and are run upon hotkeys or interaction with the WinSCP interface. The type "CustomCommands" which are command line commands, multiple CustomCommands exists by default and are stored in "HKCU:\SOFTWARE\Martin Prikryl\WinSCP 2\Configuration\CustomCommands"
-    Description: Steps to create a WinSCP "CustomCommands" persitence
+    Description: Steps to create a WinSCP "CustomCommands" persistence
     Usecase: Establishing persistence on a Windows host
     Category: Persistence
     Privileges: User or Administrator
