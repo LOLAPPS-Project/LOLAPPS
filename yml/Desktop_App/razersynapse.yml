@@ -1,0 +1,18 @@
+---
+Name: Razer 7.1 SURROUND SOUND
+Description: Razer 7.1 SURROUND SOUND is a software for superior positional audio and a lifelike gaming experience
+Author: 'Georgios Tsimpidas'
+Created: 2023-07-05
+Usage:
+  - Steps: Attach ProcMon and start the Razer 7.1 SURROUND SOUND application. Filter for the values "ProcessName Contains rzappengine.exe", "Result contains NOT FOUND" and "path ends with .dll" to check for viable abuse candidates. Generate a malicious DLL, and use a tool like Invoke-DLLClone to copy the export address table from your target dll, to your malicious one. Place the newly created DLL into the appropriate application folder, and start Razer 7.1 SURROUND SOUND.
+    Description: Steps to sideload a malicious dll
+    Usecase: Sideloading a Malicious DLL
+    Category: DLL Hijacking
+    Privileges: User interaction/User
+    Limitations: You must start Razer 7.1 SURROUND SOUND, Potential guesswork on which native DLLs are "missing" or you can hijack this one "ncrypt.dll" which loads under "C:\Users\currentuser\AppData\Local\Razer\RzAppEngine\User Data\Apps\SurroundSound\ncrypt.dll"
+    MitreID: T1574.002
+Resources:
+  - Link: https://github.com/FreySolarEye/CVE/blob/master/Razer%207.1%20SURROUND%20SOUND%20Ver.1.1.85%20-%20DLL%20Hijacking
+Acknowledgement:
+  - Person: 'Georgios Tsimpidas'
+    Handle: '@freysolareye'
