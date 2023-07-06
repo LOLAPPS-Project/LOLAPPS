@@ -1,0 +1,18 @@
+---
+Name: Pulse Secure Desktop Client
+Description: Pulse Secure Desktop Client (Pulse Client) is an extensible multi-service network client that supports integrated connectivity and secure location-aware network access.
+Author: 'Georgios Tsimpidas'
+Created: 2023-07-06
+Usage:
+  - Steps: Attach ProcMon and start the Pulse Secure Desktop Client application. Filter for the values "ProcessName Contains Pulse.exe", "Result contains NOT FOUND" and "path ends with .dll" to check for viable abuse candidates. Generate a malicious DLL, and use a tool like Invoke-DLLClone to copy the export address table from your target dll, to your malicious one. Place the newly created DLL into the appropriate application folder, and start Pulse Secure Desktop Client.
+    Description: Steps to sideload a malicious dll
+    Usecase: Sideloading a Malicious DLL
+    Category: DLL Hijacking
+    Privileges: User interaction/User
+    Limitations: You must start Pulse Secure Desktop Client, Potential guesswork on which native DLLs are "missing" or you can hijack this one "dwmapi.dll" which loads under "C:\Program Files (x86)\Common Files\Pulse Secure\JamUI\dwmapi.dll"
+    MitreID: T1574.002
+Resources:
+  - Link: https://github.com/FreySolarEye/CVE/blob/master/Razer%207.1%20SURROUND%20SOUND%20Ver.1.1.85%20-%20DLL%20Hijacking
+Acknowledgement:
+  - Person: 'Georgios Tsimpidas'
+    Handle: '@freysolareye'
