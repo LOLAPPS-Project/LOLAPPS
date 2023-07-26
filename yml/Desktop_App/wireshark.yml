@@ -1,0 +1,34 @@
+---
+Name: Wireshark
+Description: Wireshark is a free and open-source packet analyzer.
+Author: 'Mirage'
+Created: 2023-07-17
+
+Category: Execution
+Privileges: User
+MitreID: T1218
+Usage:
+Steps: Execute following command in PowerShell.
+
+& 'C:\Program Files\Wireshark\tshark.exe' -X lua_script:'<path of lua script>'
+& 'C:\Program Files\Wireshark\wireshark.exe' -X lua_script:'<path of lua script>' (Wireshark also opens while executing)
+
+lua file content
+-- mention the binary that needs to be executed
+ os.execute('C:\\Windows\\notepad.exe')
+
+Use case:  Wireshark spawns notepad.exe as a child process of wireshark.exe. Executes a process under a non suspicious signed binary.
+Resources:
+https://www.youtube.com/watch?v=iMgIp3DVFTA
+https://github.com/Miragle-Hub/Adversary-tactics-and-techniques-for-Windows/blob/main/Execution/Wireshark
+
+
+Acknowledgement:
+  - Person: 
+Ali Mosajjal     @mosajjal
+Diljith Suresh   @diljith369
+Patrick Dong     @superpb9
+Mirage           @mirage
+
+---
+  
