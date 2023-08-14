@@ -20,10 +20,7 @@ Please see:\
 https://github.com/johnjhacking/LOLAPPS/blob/main/Contributing.md
 # Maintainers
 * John Jackson ([@johnjhacking](https://twitter.com/johnjhacking))
-* Therese ([@theresem90](https://github.com/theresem90))
 * Higinio Ochoa ([@0x686967](https://twitter.com/0x686967))
-* C. Tan ([@tanc7](https://github.com/tanc7))
-* Tanya ([@pestanya](https://github.com/pestanya))
 
 
 # Credits
