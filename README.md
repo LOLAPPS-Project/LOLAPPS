@@ -1,4 +1,6 @@
 # Living off the Land Applications
+IMPORTANT UPDATE: As of August 20th, 2023 - This project is being paused. It may restart in January of 2024. Feel free to submit PRs if you'd like, but there's no guarantee any will be resolved until the new year.
+
 LOLAPPS is a compendium of applications that can be used to carry out day-to-day exploitation.
 
 <img src="https://github.com/LOLAPPS-Project/lolapps-project.github.io/blob/master/assets/logo.png" height="250">
