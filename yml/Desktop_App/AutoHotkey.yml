@@ -1,0 +1,27 @@
+---
+Name: AutoHotKey
+Description: AutoHotkey is a free, open-source scripting language for Windows that allows users to easily create small to complex scripts for all kinds of tasks such as: form fillers, auto-clicking, macros, etc.
+Author: 'Chris Mallett'
+Created: 2003-10-11
+Usage:
+  - Steps: Create/Modify an Autohotkey script to write keyboard input to a file or push to website. Autohotkey hooks into keyboard (WH_KEYBOARD_LL) to monitor user Key strokes.
+    Description: An adversary can use FileAppend to write keyboard input to a file or web.Send() to push keyboard input data via HTTP
+    Usecase: Collecting User Input which could include passwords
+    Category: Collection
+    Privileges: User
+    Limitations: None
+    MitreID: T1056.001
+  - Steps: Create an autohotkeyscript to invoke a persistence command
+    Description: Persistence can be achieved upon specific keypress/combination from the user by invoking run command for example Run "cmd", "C:\"
+    Usecase: Establishing persistence on a Windows host
+    Category: Persistence
+    Privileges: User
+    Limitations: None
+    MitreID: TA0003
+Resources:
+  - Link: https://github.com/mario-moreau/autohotkey-keylogger
+  - Link: https://www.mcafee.com/blogs/other-blogs/mcafee-labs/the-darkgate-menace-leveraging-autohotkey-attempt-to-evade-smartscreen/
+  - Link: https://www.trellix.com/blogs/research/darkgate-again-but-improved/
+  - Link: https://www.autohotkey.com/board/topic/73858-looking-for-efficient-key-logger-script/
+Acknowledgement:
+  - Person: 'Jay Kerai'
