@@ -22,7 +22,6 @@ Please see:\
 https://github.com/johnjhacking/LOLAPPS/blob/main/Contributing.md
 # Maintainers
 * John Jackson ([@johnjhacking](https://twitter.com/johnjhacking))
-* Higinio Ochoa ([@0x686967](https://twitter.com/0x686967))
 
 
 # Credits
