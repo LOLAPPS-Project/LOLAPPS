@@ -1,30 +1,34 @@
 ---
 name: Update LOLAPPS-Project.github.io
 on: [workflow_dispatch]
-
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
     steps:
       - uses: actions/checkout@v2
-
-      - name: Change .yml to .md
+      - name: Convert Desktop_App and Web_App .yml to .md
         run: |
-          for x in $(find yml/ -name '*.yml'); do echo "---" >> "$x"; mv "$x" "${x/%\.yml/.md}"; done
-          mv yml/Desktop_App yml/Desktop
-          mv yml/Web_App yml/Web
-        # mv yml/Mobile yml/Mobile / Commenting out for the time being
+          # Desktop_App .yml files to .md and move to _lolapps/Desktop
+          for file in yml/Desktop_App/*.yml; do
+            mv "$file" "${file/%\.yml/.md}"
+            mv "${file/%\.yml/.md}" "_lolapps/Desktop/"
+          done
+
+          # Web_App .yml files to .md and move to _lolapps/Web
+          for file in yml/Web_App/*.yml; do
+            mv "$file" "${file/%\.yml/.md}"
+            mv "${file/%\.yml/.md}" "_lolapps/Web/"
+          done
       - name: Deploy to LOLAPPS-Project.github.io repo
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: LOLAPPS-Project/lolapps-project.github.io
           publish_branch: master
-          publish_dir: yml
-          destination_dir: _lolapps
+          publish_dir: _lolapps
           enable_jekyll: true
           keep_files: false
-          commit_message: "Applying update "
+          commit_message: "Applying update"
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
