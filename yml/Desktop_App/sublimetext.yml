@@ -4,7 +4,7 @@ Description: A sophisticated text editor for code, markup and prose.
 Author: rootd4ddy'
 Created: 2023-07-06
 Usage:
-  - Steps: Create a python script plugin via sublime plugin API. Create a "user" plugin folder in the plugins directory, for example "%USERPROFILE%\AppData\Roaming\Sublime Text 3\Packages\User\" and place the python script in the directory. 
+  - Steps: Create a python script plugin via sublime plugin API. Create a "user" plugin folder in the plugins directory, for example "%USERPROFILE%\AppData\Roaming\Sublime Text 3\Packages\User\" and place the python script in the directory.
     Usecase: Establishing persistence on a Windows host
     Category: Persistence
     Privileges: User
