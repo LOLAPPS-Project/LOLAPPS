@@ -1,13 +1,8 @@
-
-Anyone can contribute to the project, just be sure to use this template and open up a PR in the corresponding section. 
-
-All template submissions should have at least one reference link if the exploitation methodology isn't obvious. If the application is offered on multiple platforms, choose the platform that's most logical/has the most references that you can find. For example, while Discord exists as a Desktop application - in enterprise exploitation you're more likely to see threat actors communicate via the web application, since downloading Discord looks suspicious.
-
-Keep in mind that this is an open source project. There are thousands of applications that can be used by adversaries, so you'll have to bear with us while
-we work through them. Please try to make it easy on us to PoC - there are many products that need premium or enterprise subscriptions, therefore our
-capacity to test paid apps will solely be limited on your ability to make it accessible to us or pre-existing access that we might be lucky enough to have.
-
-You'll have a better chance of standing out if you are thorough in your thought process for possible enterprise abuse. 
+## REQUIREMENTS
+- Full proof-of-concept reference. We are rejecting any template that doesn't clearly state what can be abused and how. For instance, in DLL hijacking, saying "run ProcMan and filter for NOT FOUND path ends with .dll" isn't it. Your reference MUST demonstrate the abuse you're documenting. References that are step-based only with no proof of execution/download/action, w.e., will be rejected.
+- No extra new lines after the template, and check each template line for trailing spaces.
+- Use the order of the template exactly as shown. The below template has three techniques, thus three step blocks are implemented. Add or remove as needed but don't change the order of Usecase, Category, etc.
+- If you're making a new category of abuse, also make a PR to the Categories.md file
 
 ## Template definitions
 Steps: How to carry out the technique\
@@ -18,13 +13,12 @@ Limitations: Caveats to using this method\
 MitreID: The official Mitre technique identifier
 
 ## Understanding Privs
-None: Use this for apps you can self-register to WITHOUT user interaction. Use this even if you need special access to view the application.\
-User: Needs a user account that wasn't made by you\
-User interaction: An employee or user needs to click something to finish the exploitation process\
-Administrator: Special access rights within an application\
+None: Use this for apps you can self-register to WITHOUT user interaction. For instance, if you want to use Discord as a C2 or to host files, that's something you can carry out without obtaining credentials of a user that's not yours.\
+User: Needs a local or cloud-based user account that wasn't made by you.\
+User interaction: An employee or user needs to be convinced to do "something" to finish the exploitation process.\
+Administrator: Needs administrative rights to carry out.\
 
-Note: Be concise if multiple privilege sets can accomplish a technique. For instance, in the Zix template, I wrote User interaction/User since
-an attacker can carry out Phishing if they aquire a User account in a different way.
+Note: Be concise if multiple privilege sets can accomplish a technique. For instance, in the Zix template, I wrote User interaction/User since an attacker can carry out Phishing if they aquire a User account in a different way. Another example would be DLL hijacking, which can be considered User interaction/User, since you could technically social engineer a user into clicking a file that pulls the malicious DLL and drops it into the correct directory.
 
 ```
 ---
