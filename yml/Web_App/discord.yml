@@ -18,7 +18,7 @@ Usage:
     Privileges: None
     Limitations: Must rely on additional tooling
     MitreID: T1041
-  - Steps: Attach ProcMon and start the Discord application. Generate a malicious dbghelp.dll, and use a tool like Invoke-DLLClone to copy the export address table from your target dll, to your malicious one. Place the newly created DLL into the "C:\%LOCALAPPDATA%\Discord\app-*" folder, where "*" is the correct version.
+  - Steps: Generate a malicious dbghelp.dll, and use a tool like Invoke-DLLClone to copy the export address table from your target dll, to your malicious one. Place the newly created DLL into the "C:\%LOCALAPPDATA%\Discord\app-*" folder, where "*" is the correct version.
     Description: Steps to sideload a malicious dll
     Usecase: Sideloading a Malicious DLL
     Category: DLL Hijacking
