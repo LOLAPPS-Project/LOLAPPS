@@ -1,5 +1,5 @@
 # Living off the Land Applications
-DISCONTINUED: This project is now discontinued. All existing content will be left up, but it will not be maintained any further.
+We are back. Don't submit a new template without reading the contribution guide, as some of our efforts have changed.
 --------------------------------------------------------------------------------------------------------------------------------
 LOLAPPS is a compendium of applications that can be used to carry out day-to-day exploitation.
 
@@ -12,10 +12,8 @@ that can be used to the hacker's advantage, both third-party and from within.
 Applications that you have to install can be included too, but must be indicated within the "Permissions" field for templating purposes. 
 
 # Mission
-To dominate the blue team.\
-Joking. 
 
-To document the techniques being used in the wild, and give both blue and red teamers the tools they need.  
+To document the techniques being used in the wild, and give red teamers some additional tools.
 
 # Contribution
 Please see:\
