@@ -1,0 +1,22 @@
+---
+Name: Driver Easy 
+Description: Driver Easy is a software tool designed to simplify the process of updating and managing drivers on a computer. It scans the system, identifies outdated or missing drivers, and provides a convenient way to download and install the latest versions.
+Author: Joas Antonio dos Santos
+Created: 2023-07-04
+Usage:
+  - Steps: Attach ProcMon and start the Driver Easy application. Filter for the values ProcessName Contains Driver Easy, Result contains NOT FOUND and path ends with .dll to check for viable abuse candidates, you can use DLLHijackTesting for this purpose as well. Generate a malicious DLL, and use a tool like Invoke-DLLClone to copy the export address table from your target dll, to your malicious one. Place the newly created DLL into the appropriate application folder, and start Driver Easy.
+    Description: Steps to sideload a malicious dll
+    Usecase: Sideloading a Malicious DLL
+    Category: DLL Hijacking
+    Privileges: User Interaction/User
+    Limitations: You must launch Driver Easy, and guess potential DLLs that can be hijacked.
+    MitreID: T1574.002
+Resources:
+  - Link: https://www.youtube.com/watch?v=_IvstL2FyGY&ab_channel=JoasAntoniodosSantos
+  - Link: https://www.cyberark.com/resources/threat-research-blog/dllspy-tighten-your-defense-by-discovering-dll-hijacking-easily
+  - Link: https://medium.com/techzap/dll-hijacking-part-1-basics-b6dfb8260cf1
+  - Link: https://www.ired.team/offensive-security/privilege-escalation/t1038-dll-hijacking
+  - Link: https://pentestlab.blog/2017/03/27/dll-hijacking/	 
+Acknowledgement:
+  - Person: Joas Antonio dos Santos
+    Handle: '@C0d3Cr4zy and @JoasASantos'
