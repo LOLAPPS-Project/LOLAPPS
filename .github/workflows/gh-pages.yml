@@ -9,17 +9,22 @@ jobs:
       - uses: actions/checkout@v2
       - name: Convert Desktop_App and Web_App .yml to .md
         run: |
-          # Desktop_App .yml files to .md and move to _lolapps/Desktop
+          # Ensure target directories exist
+          mkdir -p _lolapps/Desktop
+          mkdir -p _lolapps/Web
+
+          # Convert Desktop_App .yml files to .md and move to _lolapps/Desktop
           for file in yml/Desktop_App/*.yml; do
-            mv "$file" "${file/%\.yml/.md}"
-            mv "${file/%\.yml/.md}" "_lolapps/Desktop/"
+            new_file="_lolapps/Desktop/$(basename "${file/%\.yml/.md}")"
+            mv "$file" "$new_file"  # Convert and move
           done
 
-          # Web_App .yml files to .md and move to _lolapps/Web
+          # Convert Web_App .yml files to .md and move to _lolapps/Web
           for file in yml/Web_App/*.yml; do
-            mv "$file" "${file/%\.yml/.md}"
-            mv "${file/%\.yml/.md}" "_lolapps/Web/"
+            new_file="_lolapps/Web/$(basename "${file/%\.yml/.md}")"
+            mv "$file" "$new_file"
           done
+
       - name: Deploy to LOLAPPS-Project.github.io repo
         uses: peaceiris/actions-gh-pages@v3
         with:
