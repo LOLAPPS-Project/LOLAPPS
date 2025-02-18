@@ -7,4 +7,5 @@ Malware Hosting\
 C2 Channel\
 Lateral Movement\
 Persistence\
-DLL Hijacking
+DLL Hijacking\
+Proxy
