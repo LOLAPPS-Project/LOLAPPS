@@ -1,5 +1,6 @@
 ## REQUIREMENTS
 - Full proof-of-concept reference. We are rejecting any template that doesn't clearly state what can be abused and how. For instance, in DLL hijacking, saying "run ProcMan and filter for NOT FOUND path ends with .dll" isn't it. Your reference MUST demonstrate the abuse you're documenting. References that are step-based only with no proof of execution/download/action, w.e., will be rejected.
+- Limit references to two, with at least one being a full proof of concept, as described above.
 - No extra new lines after the template, and check each template line for trailing spaces.
 - Use the order of the template exactly as shown. The below template has three techniques, thus three step blocks are implemented. Add or remove as needed but don't change the order of Usecase, Category, etc.
 - If you're making a new category of abuse, also make a PR to the Categories.md file
