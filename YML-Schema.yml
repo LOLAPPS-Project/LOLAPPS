@@ -75,4 +75,4 @@ mapping:
             type: str
           "Handle":
             type: str
-            pattern: '^(@(\w){1,15})?$'
+            pattern: '^(@(\w.){1,15})?$'
