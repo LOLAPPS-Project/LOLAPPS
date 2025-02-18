@@ -45,7 +45,7 @@ mapping:
           "Category":
             type: str
             required: true
-            enum: [Data Exfiltration, Download, Phishing, Malware Hosting, C2 Channel, Lateral Movement, Persistence, DLL Hijacking]
+            enum: [Data Exfiltration, Download, Phishing, Malware Hosting, C2 Channel, Lateral Movement, Persistence, DLL Hijacking, Proxy]
           "Privileges":
             type: str
             required: true
