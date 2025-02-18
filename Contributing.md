@@ -4,6 +4,7 @@
 - No extra new lines after the template, and check each template line for trailing spaces.
 - Use the order of the template exactly as shown. The below template has three techniques, thus three step blocks are implemented. Add or remove as needed but don't change the order of Usecase, Category, etc.
 - If you're making a new category of abuse, also make a PR to the Categories.md file
+- NEW REQUIREMENT 2/18/2025: Use seperate PRs per technique please. 
 
 ## Template definitions
 Steps: How to carry out the technique\
