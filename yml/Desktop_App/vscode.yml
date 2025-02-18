@@ -24,7 +24,7 @@ Usage:
     Category: C2 Channel
     Privileges: User
     Limitations: You can have only 10 tunnels registered for one account.
-    MitreID: T1071
+    MitreID: T1572
 Resources:
   - Link: https://twitter.com/nas_bench/status/1618021415852335105
   - Link: https://twitter.com/Cyb3rSn0rlax/status/1618201140008734721
