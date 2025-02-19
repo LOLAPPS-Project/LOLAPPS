@@ -5,7 +5,7 @@
 - Use the order of the template exactly as shown. The below template has three techniques, thus three step blocks are implemented. Add or remove as needed but don't change the order of Usecase, Category, etc.
 - If you're making a new category of abuse, also make a PR to the Categories.md file
 - NEW REQUIREMENT 2/18/2025: Use seperate PRs per technique please. 
-- NEW REQUIREMENT 2/19/2025: Ensure your template pases the YAML Lint. If it doesn't, I will not approve it. Thank you in advance!
+- NEW REQUIREMENT 2/19/2025: Ensure your template passes the YAML Lint. If it doesn't, I will not approve it. Thank you in advance!
 
 ## Template definitions
 Steps: How to carry out the technique\
