@@ -11,7 +11,6 @@ Usage:
     Privileges: User
     Limitations: If using the "External command plugin" then the "Open with external command plug-in" must be installed (default). If creating/modifying a plugin then the Greenshot plugin folder (e.g. "C:\Program Files\Greenshot\Plugins") must be writeable.
     MitreID: T1546
-    MitreID: wrong format test
 Resources:
   - Link: https://twitter.com/martinsohndk/status/1648763069852442642
 Acknowledgement:
