@@ -1,6 +1,8 @@
 ---
 name: PUSH & PULL REQUEST - YAML Lint and Schema Validation Checks
-on: [push,pull_request]
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   lintFiles:
